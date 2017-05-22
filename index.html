@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<!--
+1. Use google fonts ✔
+2. Use a good background picture ✔
+3. Link to sites or pages for more information ✔
+4. In an interesting way, explain what "full" means
+5. In an interesting way, explain what "stack" means
+6. In an interesting way, explain what "LAMP stack" means
+7. Make in-line links to the key words used in these explanations
+8. -> Checkpoint <-
+9. Explain "Database" in general using both text and illustration, be interesting, google research ✔
+10. Expain MySQL using both text and illustration, be interesting, google research ✔
+11. Illustrate a typical DB table using and illustration on this page(We will do this together) ✔
+12. List and explain the MySQL CLI steps to create a DB, table, records(We will do this together) ✔
+13. -> Checkpoint <-
+-->
+
+<html>
+	<head>
+		<title> Full Stack </title>
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Ravi+Prakash" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/w3.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/fullstack.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/fullstack.js"></script>
+	</head>
+	<body>
+		<div align="center" id="titleDiv">
+			<h1 class="titleFont">Full Stack!</h1>
+			<h2 class="titleFont">Roscoe Ambrose : May 2017</h2>
+			<h3><a target="_blank" href="images/fullstack_overview.png"> Let me show you something!</a></h3>
+		</div>
+		<div class="w3-bar w3-light-grey w3-border">
+			<div class="w3-dropdown-hover">
+				<button class="w3-button">
+					Links
+				</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<a href="https://www.w3schools.com/html/default.asp" target="_blank" class="w3-bar-item w3-button">HTML</a>
+					<a href="https://www.w3schools.com/css/default.asp" target="_blank" class="w3-bar-item w3-button">CSS</a>
+					<a href="https://www.w3schools.com/js/default.asp" target="_blank" class="w3-bar-item w3-button">JavaScript</a>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div align="left" id="switchHolder">
+			<label class="switch">
+				<input id="backgroundSwitch" type="checkbox">
+				<div class="slider round">
+					<p class="makeTransparent">
+						what
+					</p>
+				</div> </label>
+			<p class="switchP">
+				<a class="makeTransparent">_</a>Click title to change background<a class="switchHint">(Off-Autoscroll)</a>
+			</p>
+			<label class="switch">
+				<input id="invertSwitch" type="checkbox">
+				<div class="slider round">
+					<p class="makeTransparent">
+						what
+					</p>
+				</div> </label>
+			<p class="switchP">
+				<a class="makeTransparent">_</a>Click to invert colors<a class="switchHint">(Off-Regular)</a>
+			</p>
+		</div>
+		<hr>
+		<h4>What does "Full" in Full Stack mean?</h4>
+		<pre>
+			Full means that you develop both the front end, and the back end.
+		</pre>
+		<hr>
+		<h4>What does "Stack" in Full Stack mean?</h4>
+		<pre>
+			
+		</pre>
+		<hr>
+		<h4>What does <a target="_blank" href="images/fullStackWIP.png">"LAMP Stack"</a> in Full Stack mean?</h4>
+		<pre>
+			
+		</pre>
+		<hr>
+		<h4>Explain DB:</h4>
+		<pre>
+			Organized way to save data on a server. LIFEBLOOD of all business, to track employees, customers, products, services, supliers...
+		</pre>
+		<hr>
+		<h4>Explain MySQL:</h4>
+		<pre>
+			Number 2 among the must-used DB's in the entire world! Oracle is number 1 because it offers professional support,
+			but is a paid service. MySQL is FREE! The inventor of MySQL named this after his first daughter, her name is "My."
+			This same inventor later created MariaDB, after his second daughter "Maria."
+		</pre>
+		<hr>
+		<h4>Explain SQL:</h4>
+		<pre>
+			Structered Query Language. MySQL is the name of the database, while SQL is the language you use inside of that 
+			database to answer questions -- ;ike "which products are slow sellers, which products are fast sellers.." SQL
+			is an international standard language, works with MySQL, Oracle SQL, Microsoft SQL server, and many others.
+		</pre>
+		<hr>
+		<h4>Explain PHP:</h4>
+		<pre>
+			PHP is a programming language that connects front end to back end. PHP readsHTML forms, then sends that form 
+			info to the server. PHP also reads the DB, ad sends that back to another HGML form. PHP is a server-side 
+			language, totally secure and private - you can't see PHP when you do a "view source."
+		</pre>
+		<hr>
+		<h4><a target="_blank" href="images/mysqlTable.gif">Explain MySQL Table:</a></h4>
+		<pre>
+			Has rows and columns, where data is organized in cells (rows are horizontal, columns are vertical). Looks
+			like an Excel spreadsheet, but as you will learn it is actually very different from Excel.
+		</pre>
+		<hr>
+		<h4>MySQL from the CLI (Command Line Interface) -- NTS, structure when done</h4>
+		<pre>
+			-- The User Interface for DB's are HTML pages that WE create!
+			-- The CLI is where experts, where the Power Users can see inside of the D
+			but in a very primative, non-GUI way. In other words, CLI is for the DB
+			not the users.
+		</pre>
+		<ol>
+			<li>
+				roscoe@compsci ~ $ mysql -u root -p
+			</li>
+			<li>
+				Enter password:
+			</li>
+			<li>
+				mysql>
+			</li>
+			<li>
+				mysql> show databases;
+			</li>
+			<li>
+				mysql> create database a4_ambrose_16may;
+			</li>
+			<li>
+				mysql> show databases;
+			</li>
+			<li>
+				mysql> use a4_ambrose_16may;
+			</li>
+			<li>
+				<pre>
+					mysql> create table student_info (
+    					-> id int(8),
+   						-> fname varchar(20),
+    					-> lname varchar(20)
+    					-> );
+				</pre>
+			</li>
+			<li>
+				mysql> describe student_info;
+			</li>
+			<li>
+				mysql> drop database a4_ambrose_16may;
+			</li>
+			<li>
+				<img src="images/createTable.png" alt="customerTableImage" height="200" width="400"/>
+			</li>
+			<li>
+				<img src="images/describeTable.png" alt="describeTableImage" height="200" width="400"/>
+			</li>
+		</ol>
+		<div id="footer">
+			<br>
+		</div>
+	</body>
+
+</html>
